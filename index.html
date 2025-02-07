@@ -3,46 +3,188 @@
   <head>
     <meta charset="UTF-8">
     <title>My First Webpage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
 
-  <body>
-    <h1>Nathan's HTML</h1>
-    <h2>Family</h2>
-      <p>I have 3 <em>siblings</em>, Ethan, Eli, Alyssa.</p>
-    <h2>Friends</h2>
+  <body class="container p-5 my-5 bg-dark text-white">
+    <p class="h1">Nathan's HTML</p>
+    &nbsp;
+    <p class="h2">Family</p>
+      <p>I have 3 <em>siblings</em>, <mark>Ethan</mark>, Eli, Alyssa.</p>
+    &nbsp;
+   <p class="h3">Friends</p>
       <p>My friends at <strong>Francis Tuttle</strong>, Aurial, Efren, Jason, Gio, Gabe. </p>
-    <h3>Favorite Links:</h3>
-    <a href="https://www.youtube.com/watch?v=6POZlJAZsok">Video 1</a> <br>
-    <a href="https://www.youtube.com/watch?v=U4zA0xnBEJU" target="_blank" rel="noopener noreferrer">Video 2</a> <br>
+    &nbsp;
+    <p class="h4">Favorite Links:</p>
+      <a href="https://www.youtube.com/watch?v=6POZlJAZsok">Video 1</a> <br>
+      <a href="https://www.youtube.com/watch?v=U4zA0xnBEJU" target="_blank" rel="noopener noreferrer">Video 2</a> <br>
 
-    <img src="https://www.historylink.org/Content/Media/Photos/Large/photo-of-bruce-lee-1973.jpg" alt="Bruce Lee" height="320" width="320">
+      <img src="https://www.historylink.org/Content/Media/Photos/Large/photo-of-bruce-lee-1973.jpg" alt="Bruce Lee" height="320" width="320">
   </body>
 
-  <table>
-    <tr>
-      <th>People</th>
-      <th>Age</th>
-      <th>Affilation </th>
-    </tr>
-    <tr>
-      <td>Ethan</td>
-      <td>15</td>
-      <td>Brother</td>
-    </tr>
-    <tr>
-      <td>Efren</td>
-      <td>17</td>
-      <td>Friend</td>
-    </tr>
-    <tr>
-      <td>Jason</td>
-      <td>17</td>
-      <td>Friend</td>
-    </tr>
-    <tr>
-      <td>Aurial</td>
-      <td>18</td>
-      <td>Friend</td>
-    </tr>
+
+
+<div class="row">
+  <div class="col-sm-3 fw-bold">Name</div>
+  <div class="col-sm-3 fw-bold">Age</div>
+  <div class="col-sm-3 fw-bold">Relationship</div>
+  <div class="col-sm-3 fw-bold">Grade</div>
+</div>
+
+<div class="row">
+  <div class="col-sm-3 text-primary">Ethan</div>
+  <div class="col-sm-3">15</div>
+  <div class="col-sm-3">Brother</div>
+  <div class="col-sm-3">Sophmore</div>
+</div>
+
+<div class="row">
+  <div class="col-sm-3">Efren</div>
+  <div class="col-sm-3">17</div>
+  <div class="col-sm-3">Friend</div>
+  <div class="col-sm-3">Senior</div>
+</div>
+
+<div class="row">
+  <div class="col-sm-3">Jason</div>
+  <div class="col-sm-3">17</div>
+  <div class="col-sm-3">Friend</div>
+  <div class="col-sm-3">Senior</div>
+</div>
+
+<div class="row">
+  <div class="col-sm-3">Auriel</div>
+  <div class="col-sm-3">18</div>
+  <div class="col-sm-3">Friend</div>
+  <div class="col-sm-3">Senior
+  </div>
+</div>
+
+&nbsp;
+
+<div class="row">
+  <div class="col-sm-3 text-primary">Ethan
+    <button type="button" class="bg-primary p-3">More</button>
+  </div>
+  <div class="col-sm-3">Efren
+    <button type="button" class="btn btn-primary" disabled>More</button>
+  </div>
+  <div class="col-sm-3">Jason
+    <button type="button" class="btn btn-primary active">More</button>
+  </div>
+  <div class="col-sm-3">Auriel
+    <button type="button" class="btn btn-light">More</button>
+  </div>
+</div>
+
+&nbsp;
+<p class="text-success">We are in <abbr title="Technology Student Association">TSA</abbr>.</p>
+
+&nbsp;
+<p>A Day Schedule</p>            
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Teacher</th>
+        <th>Class</th>
+        <th>Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Mrs. Herndon</td>
+        <td>Calculas</td>
+        <td>7:55 - 9:25</td>
+      </tr>
+      <tr>
+        <td>Mr. Harbert</td>
+        <td>Capstone</td>
+        <td>9:35 - 11:00</td>
+      </tr>
+    </tbody>
   </table>
+
+&nbsp;
+<p>B Day Schedule</p>  
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Teacher</th>
+        <th>Class</th>
+        <th>Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Mrs. Voss</td>
+        <td>Physics 2</td>
+        <td>7:55 - 9:25</td>
+      </tr>
+      <tr>
+        <td>Mr. Wooden</td>
+        <td>Cyber Security</td>
+        <td>9:35 - 11:00</td>
+      </tr>
+    </tbody>
+  </table>
+
+  &nbsp;
+  <div class="container mt-3">
+    <h2>Calculas Right Now: </h2>  
+    <img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https://substack-post-media.s3.amazonaws.com/public/images/0b4c0867-9073-4e13-84b8-c84f5ca23550_1920x1080.png" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"> 
+  </div>
+
+  &nbsp;
+  <div class="container mt-3">
+    <div class="mt-4 p-5 bg-primary text-white rounded">
+      <h1>Calculas</h1> 
+      <p>The act of trying to understand hieroglyphics while simultaneously bombing every quiz and concept check. I have a test next Tuesday :")</p> 
+    </div>
+  </div>
+
+  &nbsp;
+  <div class="alert alert-danger">
+    <strong>Danger!</strong> Nathan your HOSED! Calculas Test TUESDAY! LEVEL: GAZILLION 
+  </div>
+
+  <div class="d-grid">
+    <button type="button" class="btn btn-primary btn-block">FAIL BUTTON</button>
+  </div>
+
+  &nbsp;
+  <div class="container mt-3"></div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Options</button>
+      <ul class="dropdown-menu">
+        <li><a class="Fail" href="#">Tablet</a></li>
+        <li><a class="Give Up" href="#">Smartphone</a></li>
+      </ul>
+   </div>
+ </div>
+
+ <span class="badge bg-success">Give Up</span>
+<span class="badge bg-danger">Fail</span>
+
+<button type="button" class="btn btn-danger">
+  Missing Assignments <span class="badge bg-dark">
+    <div class="spinner-border text-danger"></div>
+  </span>
+</button>
+<p></p>
+<div class="progress">
+  <div class="progress-bar" style="width:58%">Grade Right Now :"(</div>
+</div>
+&nbsp;
+<div class="progress">
+  <div class="progress-bar bg-success" style="width:100%">Chances of Failing</div>
+</div>
+
+&nbsp;
+<ul class="pagination">
+  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+  <li class="page-item"><a class="page-link" href="#">1</a></li>
+  <li class="page-item active"><a class="page-link" href="#">2</a></li>
+  <li class="page-item"><a class="page-link" href="#">3</a></li>
+  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+</ul>
 </html>
